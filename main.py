@@ -24,9 +24,12 @@ async def start_handler(_, message: Message):
     try:
         await message.reply_sticker("CAACAgUAAxkBAAEC11VhMKoiYfFiHo9BxHHaD2M2rMIW0gACDgUAArD8gFX57AkpeFVIYiAE")
         await message.reply_text(
-            text="😋Hello, I am simple Torrent Search Bot!\n"
-                 "✅I can search Torrent Magnetic Links from Inline.\n\n"
-                 "✅Made by @Darkridersslk ",
+            text="𝗛𝗶 {} ✨💐...𝗜 𝗮𝗺 𝗮 𝗣𝗼𝘄𝗲𝗿𝗳𝘂𝗹 𝗧𝗼𝗿𝗿𝗲𝗻𝘁 𝗦𝗲𝗮𝗿𝗰𝗵 𝗕𝗼𝘁 𝗶𝗻 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 🥰🔥\n\n"
+                 "𝗠𝗮𝗱𝗲 𝗳𝗼𝗿 𝗣𝗮𝗻𝘁𝗵𝗲𝗿 𝗠𝗶𝗿𝗿𝗼𝗿 𝗚𝗿𝗼𝘂𝗽🥰✨\n\n"
+                 "𝗬𝗧𝗦 , 𝗣𝗶𝗿𝗮𝘁𝗲𝗕𝗮𝘆 𝗮𝗻𝗱 13377𝘅 𝗔𝗿𝗲 𝗦𝘂𝗽𝗽𝗿𝘁𝗲𝗱 🔥\n\n"
+                 "𝗟𝗶𝘃𝗲 𝗼𝗻 𝗛𝗲𝗿𝗼𝗸𝘂 𝗦𝗲𝗿𝘃𝗲𝗿 🔥\n\n"
+                 "𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗯𝘆 <b>@Ravindu_Deshanz ⚡️</b>\n\n"
+                 "<b>/help</b> 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗢𝗽𝘁𝗶𝗼𝗻𝘀 🙃❤️",
             disable_web_page_preview=True,
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(DEFAULT_SEARCH_MARKUP)
