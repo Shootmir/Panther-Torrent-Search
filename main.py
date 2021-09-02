@@ -103,7 +103,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"𝗟𝗲𝗲𝗰𝗵𝗲𝗿𝘀 ⭐️:** `{torrentList[i]['Leechers']}`\n\n"
                                              f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 🎃:** `{torrentList[i]['Uploader']}`\n"
                                              f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 📅 :** {torrentList[i]['Date']}**\n\n\n"
-                                             f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @Ravindu_Deshanz 🥰🌷  ",
+                                             f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 **@Ravindu_Deshanz\n**@PantherzBot 🥰🌷  ",
                                 parse_mode="Markdown"
                             ),
                             reply_markup=InlineKeyboardMarkup(
@@ -155,7 +155,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"𝗥𝗮𝘁𝗶𝗻𝗴𝘀 ⭐️:** `{torrentList[i]['Rating']}`\n\n"
                                              f"𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻 🌶:** `{torrentList[i]['Runtime']}`\n\n"
                                              f"𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝗼𝗻 🥺🔥 {torrentList[i]['ReleaseDate']}**\n\n\n"
-                                             f"𝗧𝗼𝗿𝗿𝗲𝗻𝘁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗟𝗶𝗻𝗸𝘀 🥭🥰✨:**\n{dl_links}\n\n 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @Ravindu_Deshanz 🥰🌷",
+                                             f"𝗧𝗼𝗿𝗿𝗲𝗻𝘁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗟𝗶𝗻𝗸𝘀 🥭🥰✨:**\n{dl_links}\n\n 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 **@Ravindu_Deshanz\n**@PantherzBot 🥰🌷",
                                 parse_mode="Markdown",
                                 disable_web_page_preview=True
                             ),
@@ -207,7 +207,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"𝗟𝗲𝗲𝗰𝗵𝗲𝗿𝘀 ⭐️:** `{torrentList[i]['Leechers']}`\n\n"
                                              f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 🎃:** `{torrentList[i]['Uploader']}`\n"
                                              f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 📅 :** {torrentList[i]['Date']}**\n\n\n"
-                                             f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @Ravindu_Deshanz 🥰🌷  ",
+                                             f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 **@Ravindu_Deshanz\n**@PantherzBot  ",
                                 parse_mode="Markdown"
                             ),
                             reply_markup=InlineKeyboardMarkup(
@@ -246,7 +246,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                          f"Downloads:** `{torrentList[i]['Downloads']}`\n\n"
                                          f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 🎃 {torrentList[i]['UploadedBy']}__\n\n"
                                          f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 📅 {torrentList[i]['DateUploaded']}__\n\n\n"
-                                         f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @Ravindu_Deshanz 🥰🌷",
+                                         f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 **@Ravindu_Deshanz\n**@PantherzBot 🥰🌷",
                             parse_mode="Markdown"
                         ),
                         reply_markup=InlineKeyboardMarkup(
