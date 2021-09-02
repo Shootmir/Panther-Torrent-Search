@@ -97,7 +97,7 @@ async def inline_handlers(_, inline: InlineQuery):
                             description=f"Seeders: {torrentList[i]['Seeders']}, Leechers: {torrentList[i]['Leechers']}\nSize: {torrentList[i]['Size']}",
                             input_message_content=InputTextMessageContent(
                                 message_text=f"**🗂Category:** `{torrentList[i]['Category']}`\n"
-                                             f"**📝Name:** `{torrentList[i]['Seeders']}`\n"
+                                             f"**📝Name:** `{torrentList[i]['Name']}`\n"
                                              f"**📊Size:** `{torrentList[i]['Size']}`\n"
                                              f"**📦Seeders:** `{torrentList[i]['Seeders']}`\n"
                                              f"**🔗Leechers:** `{torrentList[i]['Leechers']}`\n"
