@@ -237,15 +237,15 @@ async def inline_handlers(_, inline: InlineQuery):
                         title=f"{torrentList[i]['Name']}",
                         description=f"Seeders: {torrentList[i]['Seeders']}, Leechers: {torrentList[i]['Leechers']}\nSize: {torrentList[i]['Size']}, Downloads: {torrentList[i]['Downloads']}",
                         input_message_content=InputTextMessageContent(
-                            message_text=f"𝗧𝗼𝗿𝗿𝗲𝗻𝘁 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 🌷:** `{torrentList[i]['Category']}`\n"
-                                         f"𝗡𝗮𝗺𝗲 🌺 `{torrentList[i]['Name']}`\n"
-                                         f"Language:** `{torrentList[i]['Language']}`\n"
-                                         f"𝗦𝗲𝗲𝗱𝗲𝗿𝘀 ✨:** `{torrentList[i]['Seeders']}`\n"
-                                         f"𝗟𝗲𝗲𝗰𝗵𝗲𝗿𝘀 ⭐️:** `{torrentList[i]['Leechers']}`\n"
-                                         f"𝗦𝗶𝘇𝗲 🥭:** `{torrentList[i]['Size']}`\n"
-                                         f"Downloads:** `{torrentList[i]['Downloads']}`\n"
-                                         f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 🎃 {torrentList[i]['UploadedBy']}__\n"
-                                         f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 📅 {torrentList[i]['DateUploaded']}__\n\n"
+                            message_text=f"𝗧𝗼𝗿𝗿𝗲𝗻𝘁 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 🌷:** `{torrentList[i]['Category']}`\n\n"
+                                         f"𝗡𝗮𝗺𝗲 🌺 `{torrentList[i]['Name']}`\n\n"
+                                         f"Language:** `{torrentList[i]['Language']}`\n\n"
+                                         f"𝗦𝗲𝗲𝗱𝗲𝗿𝘀 ✨:** `{torrentList[i]['Seeders']}`\n\n"
+                                         f"𝗟𝗲𝗲𝗰𝗵𝗲𝗿𝘀 ⭐️:** `{torrentList[i]['Leechers']}`\n\n"
+                                         f"𝗦𝗶𝘇𝗲 🥭:** `{torrentList[i]['Size']}`\n\n"
+                                         f"Downloads:** `{torrentList[i]['Downloads']}`\n\n"
+                                         f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 🎃 {torrentList[i]['UploadedBy']}__\n\n"
+                                         f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 📅 {torrentList[i]['DateUploaded']}__\n\n\n"
                                          f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @Ravindu_Deshanz 🥰🌷",
                             parse_mode="Markdown"
                         ),
