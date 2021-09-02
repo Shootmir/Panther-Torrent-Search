@@ -61,18 +61,18 @@ async def inline_handlers(_, inline: InlineQuery):
                 reply_markup=InlineKeyboardMarkup(DEFAULT_SEARCH_MARKUP)
             )
         )
-    elif search_ts.startswith("!pb"):
+    elif search_ts.startswith("PB"):
         query = search_ts.split(" ", 1)[-1]
         if (query == "") or (query == " "):
             answers.append(
                 InlineQueryResultArticle(
-                    title="!pb [text]",
+                    title="PB [text]",
                     description="Search For Torrent in ThePirateBay ...",
                     input_message_content=InputTextMessageContent(
-                        message_text="`!pb [text]`\n\nSearch ThePirateBay Torrents from Inline!",
+                        message_text="`PB [text]`\n\nSearch ThePirateBay Torrents from Inline!",
                         parse_mode="Markdown"
                     ),
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍Search Again", switch_inline_query_current_chat="!pb ")]])
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍Search Again", switch_inline_query_current_chat="PB ")]])
                 )
             )
         else:
@@ -86,7 +86,7 @@ async def inline_handlers(_, inline: InlineQuery):
                             message_text=f"No Torrents Found For `{query}` in ThePirateBay !!",
                             parse_mode="Markdown"
                         ),
-                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Try Again", switch_inline_query_current_chat="!pb ")]])
+                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Try Again", switch_inline_query_current_chat="PB ")]])
                     )
                 )
             else:
@@ -107,7 +107,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                 parse_mode="Markdown"
                             ),
                             reply_markup=InlineKeyboardMarkup(
-                                [[InlineKeyboardButton("🔍Search Again", switch_inline_query_current_chat="!pb ")]])
+                                [[InlineKeyboardButton("🔍Search Again", switch_inline_query_current_chat="PB ")]])
                         )
                     )
     elif search_ts.startswith("!yts"):
