@@ -22,7 +22,7 @@ DEFAULT_SEARCH_MARKUP = [
 @TorrentBot.on_message(filters.command("start"))
 async def start_handler(_, message: Message):
     try:
-        await message.reply_sticker("CAACAgUAAx0CQ2C8OgACGP1g9BHVCewNVakOnudwcNwCr7PrEgACoAMAAgaJYVd9142K-DF9GSAE")
+        await message.reply_sticker("CAACAgUAAxkBAAEC11VhMKoiYfFiHo9BxHHaD2M2rMIW0gACDgUAArD8gFX57AkpeFVIYiAE")
         await message.reply_text(
             text="😋Hello, I am simple Torrent Search Bot!\n"
                  "✅I can search Torrent Magnetic Links from Inline.\n\n"
