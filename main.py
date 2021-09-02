@@ -11,7 +11,7 @@ from tool import SearchYTS, SearchAnime, Search1337x, SearchPirateBay
 
 TorrentBot = Client(session_name=Config.SESSION_NAME, api_id=Config.API_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN)
 DEFAULT_SEARCH_MARKUP = [
-                    [InlineKeyboardButton("𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗧𝗦 𝗠𝗼𝘃𝗶𝗲𝘀 📺🔥", switch_inline_query_current_chat="!yts "),
+                    [InlineKeyboardButton("𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗧𝗦 𝗠𝗼𝘃𝗶𝗲𝘀 📺🔥", switch_inline_query_current_chat="YTS "),
                      InlineKeyboardButton("𝗦𝗲𝗮𝗿𝗰𝗵 𝗜𝗻 1337x 🔥", switch_inline_query_current_chat="")],
                     [InlineKeyboardButton("𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗻𝘆 𝗧𝗼𝗿𝗿𝗲𝗻𝘁 𝗶𝗻 𝗣𝗶𝗿𝗮𝘁𝗲𝗯𝗮𝘆 ☠️🍁", switch_inline_query_current_chat="PB ")],
                     [InlineKeyboardButton("𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 🌷 ", url="https://t.me/joinchat/bZfGkMGaGwswZjI1"),
@@ -96,33 +96,33 @@ async def inline_handlers(_, inline: InlineQuery):
                             title=f"{torrentList[i]['Name']}",
                             description=f"Seeders: {torrentList[i]['Seeders']}, Leechers: {torrentList[i]['Leechers']}\nSize: {torrentList[i]['Size']}",
                             input_message_content=InputTextMessageContent(
-                                message_text=f"**🗂Category:** `{torrentList[i]['Category']}`\n"
-                                             f"**📝Name:** `{torrentList[i]['Name']}`\n"
-                                             f"**📊Size:** `{torrentList[i]['Size']}`\n"
-                                             f"**📦Seeders:** `{torrentList[i]['Seeders']}`\n"
-                                             f"**🔗Leechers:** `{torrentList[i]['Leechers']}`\n"
-                                             f"**📤Uploader:** `{torrentList[i]['Uploader']}`\n"
-                                             f"**📭Uploaded :** {torrentList[i]['Date']}**\n\n"
-                                             f"**🗒Magnet:**\n`{torrentList[i]['Magnet']}`\n\n ✅ Powered By @SDBOTs_inifinity  ",
+                                message_text=f"𝗧𝗼𝗿𝗿𝗲𝗻𝘁 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 🌷:** `{torrentList[i]['Category']}`\n"
+                                             f"𝗡𝗮𝗺𝗲 🌺:** `{torrentList[i]['Name']}`\n\n"
+                                             f"𝗦𝗶𝘇𝗲 🥭:** `{torrentList[i]['Size']}`\n\n"
+                                             f"𝗦𝗲𝗲𝗱𝗲𝗿𝘀 ✨:** `{torrentList[i]['Seeders']}`\n\n"
+                                             f"𝗟𝗲𝗲𝗰𝗵𝗲𝗿𝘀 ⭐️:** `{torrentList[i]['Leechers']}`\n\n"
+                                             f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 🎃:** `{torrentList[i]['Uploader']}`\n"
+                                             f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 📅 :** {torrentList[i]['Date']}**\n\n\n"
+                                             f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @Ravindu_Deshanz 🥰🌷  ",
                                 parse_mode="Markdown"
                             ),
                             reply_markup=InlineKeyboardMarkup(
-                                [[InlineKeyboardButton("🔍Search Again", switch_inline_query_current_chat="PB ")]])
+                                [[InlineKeyboardButton("𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗴𝗮𝗶𝗻 🌶✨", switch_inline_query_current_chat="PB ")]])
                         )
                     )
-    elif search_ts.startswith("!yts"):
+    elif search_ts.startswith("YTS"):
         query = search_ts.split(" ", 1)[-1]
         if (query == "") or (query == " "):
             answers.append(
                 InlineQueryResultArticle(
-                    title="!yts [text]",
-                    description="Search For Torrent in YTS ...",
+                    title="YTS [text]",
+                    description="𝐓𝐲𝐩𝐞 𝐭𝐡𝐞 𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞 ⚡️",
                     input_message_content=InputTextMessageContent(
-                        message_text="`!yts [text]`\n\nSearch YTS Torrents from Inline!",
+                        message_text="`YTS [text]`\n\n𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗧𝗦 𝗠𝗼𝘃𝗶𝗲𝘀 🥰🔥",
                         parse_mode="Markdown"
                     ),
                     reply_markup=InlineKeyboardMarkup(
-                        [[InlineKeyboardButton("🔍Search Again", switch_inline_query_current_chat="!yts ")]])
+                        [[InlineKeyboardButton("𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗴𝗮𝗶𝗻 🌶✨", switch_inline_query_current_chat="YTS ")]])
                 )
             )
         else:
@@ -130,14 +130,14 @@ async def inline_handlers(_, inline: InlineQuery):
             if not torrentList:
                 answers.append(
                     InlineQueryResultArticle(
-                        title="No Torrents Found!",
-                        description=f"Can't find YTS torrents for {query} !!",
+                        title="𝗡𝗼 𝗧𝗼𝗿𝗿𝗲𝗻𝘁𝘀 𝗙𝗼𝘂𝗻𝗱 🥺",
+                        description=f"𝐍𝐨 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 🥺 {query} !!",
                         input_message_content=InputTextMessageContent(
                             message_text=f"No YTS Torrents Found For `{query}`",
                             parse_mode="Markdown"
                         ),
                         reply_markup=InlineKeyboardMarkup(
-                            [[InlineKeyboardButton("Try Again", switch_inline_query_current_chat="!yts ")]])
+                            [[InlineKeyboardButton("Try Again", switch_inline_query_current_chat="YTS ")]])
                     )
                 )
             else:
@@ -148,18 +148,18 @@ async def inline_handlers(_, inline: InlineQuery):
                             title=f"{torrentList[i]['Name']}",
                             description=f"Language: {torrentList[i]['Language']}\nLikes: {torrentList[i]['Likes']}, Rating: {torrentList[i]['Rating']}",
                             input_message_content=InputTextMessageContent(
-                                message_text=f"**🔐Genre:** `{torrentList[i]['Genre']}`\n"
-                                             f"**🏷Name:** `{torrentList[i]['Name']}`\n"
-                                             f"**📝Language:** `{torrentList[i]['Language']}`\n"
-                                             f"**🖇Likes:** `{torrentList[i]['Likes']}`\n"
-                                             f"**🌟Rating:** `{torrentList[i]['Rating']}`\n"
-                                             f"**📊Duration:** `{torrentList[i]['Runtime']}`\n"
-                                             f"**🗓Released on {torrentList[i]['ReleaseDate']}**\n\n"
-                                             f"**🔗Torrent Download Links:**\n{dl_links}\n\n ✅ Powered By @SDBOTs_inifinity",
+                                message_text=f"𝗚𝗲𝗻𝗿𝗲 🔥:** `{torrentList[i]['Genre']}`\n\n"
+                                             f"𝗡𝗮𝗺𝗲 🌺:** `{torrentList[i]['Name']}`\n\n"
+                                             f"𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲 ☘️:** `{torrentList[i]['Language']}`\n\n"
+                                             f"𝗟𝗶𝗸𝗲𝘀 ❤️:** `{torrentList[i]['Likes']}`\n\n"
+                                             f"𝗥𝗮𝘁𝗶𝗻𝗴𝘀 ⭐️:** `{torrentList[i]['Rating']}`\n\n"
+                                             f"𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻 🌶:** `{torrentList[i]['Runtime']}`\n\n"
+                                             f"𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝗼𝗻 🥺🔥 {torrentList[i]['ReleaseDate']}**\n\n\n"
+                                             f"𝗧𝗼𝗿𝗿𝗲𝗻𝘁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗟𝗶𝗻𝗸𝘀 🥭🥰✨:**\n{dl_links}\n\n 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @Ravindu_Deshanz 🥰🌷",
                                 parse_mode="Markdown",
                                 disable_web_page_preview=True
                             ),
-                            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍Search Again", switch_inline_query_current_chat="!yts ")]]),
+                            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗴𝗮𝗶𝗻 🌶✨", switch_inline_query_current_chat="YTS ")]]),
                             thumb_url=torrentList[i]["Poster"]
                         )
                     )
@@ -200,17 +200,18 @@ async def inline_handlers(_, inline: InlineQuery):
                             title=f"{torrentList[i]['Name']}",
                             description=f"Seeders: {torrentList[i]['Seeder']}, Leechers: {torrentList[i]['Leecher']}\nSize: {torrentList[i]['Size']}",
                             input_message_content=InputTextMessageContent(
-                                message_text=f"**🗂Category:** `{torrentList[i]['Category']}`\n"
-                                             f"**📝Name:** `{torrentList[i]['Name']}`\n"
-                                             f"**📦Seeders:** `{torrentList[i]['Seeder']}`\n"
-                                             f"**🔗Leechers:** `{torrentList[i]['Leecher']}`\n"
-                                             f"**📊Size:** `{torrentList[i]['Size']}`\n"
-                                             f"**📭Uploaded on:** `{torrentList[i]['Date']}`\n\n"
-                                             f"**🗒Magnet:** \n`{torrentList[i]['Magnet']}`\n\n✅ Powered By @SDBOTs_inifinity",
+                                message_text=f"𝗧𝗼𝗿𝗿𝗲𝗻𝘁 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 🌷:** `{torrentList[i]['Category']}`\n"
+                                             f"𝗡𝗮𝗺𝗲 🌺:** `{torrentList[i]['Name']}`\n\n"
+                                             f"𝗦𝗶𝘇𝗲 🥭:** `{torrentList[i]['Size']}`\n\n"
+                                             f"𝗦𝗲𝗲𝗱𝗲𝗿𝘀 ✨:** `{torrentList[i]['Seeders']}`\n\n"
+                                             f"𝗟𝗲𝗲𝗰𝗵𝗲𝗿𝘀 ⭐️:** `{torrentList[i]['Leechers']}`\n\n"
+                                             f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 🎃:** `{torrentList[i]['Uploader']}`\n"
+                                             f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 📅 :** {torrentList[i]['Date']}**\n\n\n"
+                                             f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @Ravindu_Deshanz 🥰🌷  ",
                                 parse_mode="Markdown"
                             ),
                             reply_markup=InlineKeyboardMarkup(
-                                [[InlineKeyboardButton("🔍Search Again", switch_inline_query_current_chat="!a ")]]
+                                [[InlineKeyboardButton("𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗴𝗮𝗶𝗻 🌶✨", switch_inline_query_current_chat="!a ")]]
                             )
                         )
                     )
@@ -236,21 +237,20 @@ async def inline_handlers(_, inline: InlineQuery):
                         title=f"{torrentList[i]['Name']}",
                         description=f"Seeders: {torrentList[i]['Seeders']}, Leechers: {torrentList[i]['Leechers']}\nSize: {torrentList[i]['Size']}, Downloads: {torrentList[i]['Downloads']}",
                         input_message_content=InputTextMessageContent(
-                            message_text=f"**Category:** `{torrentList[i]['Category']}`\n"
-                                         f"**Name:** `{torrentList[i]['Name']}`\n"
-                                         f"**Language:** `{torrentList[i]['Language']}`\n"
-                                         f"**Seeders:** `{torrentList[i]['Seeders']}`\n"
-                                         f"**Leechers:** `{torrentList[i]['Leechers']}`\n"
-                                         f"**Size:** `{torrentList[i]['Size']}`\n"
-                                         f"**Downloads:** `{torrentList[i]['Downloads']}`\n"
-                                         f"__Uploaded by {torrentList[i]['UploadedBy']}__\n"
-                                         f"__Uploaded {torrentList[i]['DateUploaded']}__\n"
-                                         f"__Last Checked {torrentList[i]['LastChecked']}__\n\n"
-                                         f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\n✅ Powered By @SDBOTs_inifinity",
+                            message_text=f"𝗧𝗼𝗿𝗿𝗲𝗻𝘁 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 🌷:** `{torrentList[i]['Category']}`\n"
+                                         f"𝗡𝗮𝗺𝗲 🌺 `{torrentList[i]['Name']}`\n"
+                                         f"Language:** `{torrentList[i]['Language']}`\n"
+                                         f"𝗦𝗲𝗲𝗱𝗲𝗿𝘀 ✨:** `{torrentList[i]['Seeders']}`\n"
+                                         f"𝗟𝗲𝗲𝗰𝗵𝗲𝗿𝘀 ⭐️:** `{torrentList[i]['Leechers']}`\n"
+                                         f"𝗦𝗶𝘇𝗲 🥭:** `{torrentList[i]['Size']}`\n"
+                                         f"Downloads:** `{torrentList[i]['Downloads']}`\n"
+                                         f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 🎃 {torrentList[i]['UploadedBy']}__\n"
+                                         f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 📅 {torrentList[i]['DateUploaded']}__\n\n"
+                                         f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @Ravindu_Deshanz 🥰🌷",
                             parse_mode="Markdown"
                         ),
                         reply_markup=InlineKeyboardMarkup(
-                            [[InlineKeyboardButton("🔍Search Again", switch_inline_query_current_chat="")]]
+                            [[InlineKeyboardButton("𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗴𝗮𝗶𝗻 🌶✨", switch_inline_query_current_chat="")]]
                         ),
                         thumb_url=torrentList[i]['Poster']
                     )
