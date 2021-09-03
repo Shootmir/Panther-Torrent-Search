@@ -101,7 +101,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"𝗦𝗶𝘇𝗲 🥭:** `{torrentList[i]['Size']}`\n\n"
                                              f"𝗦𝗲𝗲𝗱𝗲𝗿𝘀 ✨:** `{torrentList[i]['Seeders']}`\n\n"
                                              f"𝗟𝗲𝗲𝗰𝗵𝗲𝗿𝘀 ⭐️:** `{torrentList[i]['Leechers']}`\n\n"
-                                             f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 🎃:** `{torrentList[i]['Uploader']}`\n"
+                                             f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 🎃:** `{torrentList[i]['Uploader']}`\n\n"
                                              f"𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 📅 :** {torrentList[i]['Date']}**\n\n\n"
                                              f"𝗠𝗮𝗴𝗲𝘁 🧲:**\n`{torrentList[i]['Magnet']}`\n\n 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @Ravindu_Deshanz\n\n@PantherzBot 🥰🌷  ",
                                 parse_mode="Markdown"
