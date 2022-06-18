@@ -32,7 +32,7 @@
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sadew451/Torrent-search-bot)
 
 ###              The easiest way to deploy this  Bot
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/sadew451/Torrent-search-Bot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Shootmir/Panther-Torrent-Search?organization=Shootmir&organization=Shootmir"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
 
 
 ###   <a href="https://youtu.be/9vYgMk2k-dQ?sub_confirmation=1"><img src="https://img.shields.io/badge/How%20To-Deploy-red.svg?logo=Youtube"></a>
